@@ -8,10 +8,10 @@
 PerlinNoise::PerlinNoise( unsigned seed )
 {
 	// workaround for VS2012
-	if(seed==0)
-	{
-		seed = std::mt19937::default_seed;
-	}
+//	if(seed==0)
+//	{
+//		seed = std::mt19937::default_seed;
+//	}
 
 	// p[0]..p[255] contains all numbers in [0..255] in random order		
 	std::iota(std::begin(p),std::begin(p)+256,0);
